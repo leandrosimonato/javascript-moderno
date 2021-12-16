@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Block scopes.</title>
+</head>
+<body>
+	<script>
+		{
+			// Só vai ficar definido apenas neste scopo.
+			let nome = 'Leandro';
+			let testes = function(){
+				console.log('Olá!');
+			}
+			// function testes() {
+			// 	console.log('Olá!');
+			// }
+			testes();
+		}
+		// testes();
+	</script>
+</body>
+</html>
