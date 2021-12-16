@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rest e spread.</title>
+</head>
+<body>
+	<script>
+		var nomes = [
+			{
+				nome: 'Ana Carolina'
+			},
+			{
+				nome: 'Catarina'
+			},
+		];
+
+		const objetos = [...nomes, {
+			nome: 'Leandro'
+		}];
+
+		function testes(...numero) {
+			console.log(numero[0][0]);
+		}
+
+		testes(1,2,3,4,5,6,{nome: 'Catarina'});
+		testes([1,2,3,4,5,6]);
+
+	console.log(objetos);
+	
+	</script>
+</body>
+</html>
